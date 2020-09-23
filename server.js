@@ -79,7 +79,7 @@ function download(videoId) {
                 .on('error', err => console.log(err))
                 .on('end', () => {
                 })
-                .pipe(createWriteStream(fileName))
+                .pipe(createWriteStream(fileName + '.mp4'))
 
         });
 
